@@ -1,3 +1,4 @@
 [build]
-  command = "npm install && npm run build"
-  publish = "out"  # Папка, в которую Next.js экспортирует файлы (по умолчанию out)
+  base = "/opt/build/repo"
+  command = "npm install && npm run build && npm run export"  # Стандартная сборка с экспортом
+  publish = "out"  # Папка, куда Next.js экспортирует статические файлы
