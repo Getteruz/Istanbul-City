@@ -1,6 +1,3 @@
 [build]
-  command = "npm run build"
-  publish = "out"  # Папка, куда Next.js собирает проект (если используется static export)
-[build]
   command = "npm install && npm run build"
-  publish = "out"  # Папка для публикации
+  publish = "out"  # Папка для публикации (или "build" если используется обычный export)
