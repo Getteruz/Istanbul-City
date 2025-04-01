@@ -1,3 +1,4 @@
 [build]
   command = "npm install && npm run build"
-  publish = "out"  # Папка для публикации (или "build" если используется обычный export)
+  publish = "out"  # Это может быть "out" или "build", в зависимости от настроек вашего проекта
+  base = "src"     # Укажи базовую директорию для сборки, если проект внутри папки src
